@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaCode Solutions | Desarrollo de Software</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="brand"><i class="bi bi-cpu-fill"></i> NovaCode<span>Solutions</span></a>
+      <nav class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#estadisticas">Métricas</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#cotizador">Cotizador</a>
+        <a href="#contacto" class="btn-nav">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge hero-anim"><i class="bi bi-lightning-charge-fill"></i> Software a la medida</span>
+        <h1 class="hero-anim">Construimos plataformas web escalables para empresas modernas</h1>
+        <p class="hero-anim">Aplicaciones web, APIs REST e infraestructura en la nube con estándares profesionales.</p>
+        <div class="hero-botones hero-anim">
+          <a href="#cotizador" class="btn-primario">Calcular presupuesto</a>
+          <a href="#proyectos" class="btn-secundario">Ver proyectos</a>
+        </div>
+      </div>
+      <div class="code-card hero-anim">
+        <pre><code>service: novacode-platform
+uptime: 99.98%
+stack: [FastAPI, PostgreSQL, JS]
+status: READY_FOR_PRODUCTION</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="seccion">
+    <div class="container">
+      <h2 class="titulo">Nuestros Servicios</h2>
+      <div class="grid-3">
+        <article class="card servicio-card">
+          <i class="bi bi-window-stack icono"></i>
+          <h3>Desarrollo Web</h3>
+          <p>Sitios corporativos, sistemas administrativos y aplicaciones SSR rápidas.</p>
+        </article>
+        <article class="card servicio-card">
+          <i class="bi bi-hdd-network icono"></i>
+          <h3>APIs y Backend</h3>
+          <p>Servicios REST seguros en Python con FastAPI y PostgreSQL.</p>
+        </article>
+        <article class="card servicio-card">
+          <i class="bi bi-shield-lock icono"></i>
+          <h3>Seguridad Cloud</h3>
+          <p>Despliegue en la nube, certificados SSL y monitoreo continuo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnologias" class="seccion alt">
+    <div class="container">
+      <h2 class="titulo">Tecnologías Utilizadas</h2>
+      <div class="tech-grid">
+        <div class="pill scroll-reveal"><i class="bi bi-filetype-html"></i> HTML5 &amp; CSS3</div>
+        <div class="pill scroll-reveal"><i class="bi bi-filetype-js"></i> JavaScript</div>
+        <div class="pill scroll-reveal"><i class="bi bi-filetype-py"></i> Python / FastAPI</div>
+        <div class="pill scroll-reveal"><i class="bi bi-database-fill"></i> PostgreSQL</div>
+        <div class="pill scroll-reveal"><i class="bi bi-git"></i> Git &amp; GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Estadísticas -->
+  <section id="estadisticas" class="seccion stats">
+    <div class="container grid-4">
+      <div class="scroll-reveal"><h3>+85</h3><p>Proyectos entregados</p></div>
+      <div class="scroll-reveal"><h3>99.9%</h3><p>Disponibilidad</p></div>
+      <div class="scroll-reveal"><h3>+40</h3><p>Clientes activos</p></div>
+      <div class="scroll-reveal"><h3>24/7</h3><p>Soporte técnico</p></div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="seccion">
+    <div class="container">
+      <h2 class="titulo">Proyectos Destacados</h2>
+      <div class="grid-3">
+        <article class="card scroll-reveal"><h3>Cotizador Web</h3><p>Cálculo instantáneo de presupuestos con persistencia en navegador.</p></article>
+        <article class="card scroll-reveal"><h3>API de Videojuegos</h3><p>Catálogo de solo lectura conectado a PostgreSQL con Swagger UI.</p></article>
+        <article class="card scroll-reveal"><h3>Control Escolar SSR</h3><p>Altas, bajas y consultas académicas renderizadas en servidor.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="cotizador" class="seccion alt">
+    <div class="container">
+      <h2 class="titulo">Calculadora Estimada</h2>
+      <div class="calc-box scroll-reveal">
+        <div class="calc-inputs">
+          <div>
+            <label for="calcPaginas">Cantidad de páginas</label>
+            <input type="number" id="calcPaginas" min="1" value="5" />
+          </div>
+          <div>
+            <label for="calcPrecio">Precio por página ($)</label>
+            <input type="number" id="calcPrecio" min="0" value="800" />
+          </div>
+          <button type="button" id="btnCalcular" class="btn-primario">Calcular</button>
+        </div>
+        <div class="calc-res">
+          <span>Costo estimado:</span>
+          <strong id="costoEstimado">$4,000</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <div class="container contacto">
+      <h2 class="titulo">Contacto</h2>
+      <form id="formContacto" class="form-contacto scroll-reveal">
+        <input type="text" id="nombreContacto" placeholder="Tu nombre" required />
+        <input type="email" id="correoContacto" placeholder="Tu correo" required />
+        <textarea id="mensajeContacto" rows="4" placeholder="Cuéntanos tu proyecto..." required></textarea>
+        <button type="submit" class="btn-primario"><i class="bi bi-send-fill"></i> Enviar</button>
+        <p id="estadoContacto"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 NovaCode Solutions · Todos los derechos reservados.</p>
+      <div class="social">
+        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
